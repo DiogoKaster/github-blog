@@ -1,5 +1,5 @@
-import { Profile } from '../../components/Profile'
-import { SearchPost } from '../../components/SearchPost'
+import { Profile } from './components/Profile'
+import { SearchPost } from './components/SearchPost'
 import { PostResume } from './components/PostResume'
 import { HomeContainer, PostListContainer } from './styles'
 

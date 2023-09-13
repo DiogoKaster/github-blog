@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const PostResumeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1.25rem;
   width: 100%;
   max-width: 26rem;
@@ -13,4 +12,29 @@ export const PostResumeContainer = styled.div`
 
   background: ${(props) => props.theme['base-post']};
   border-radius: 0.5rem;
+`
+
+export const PostResumeHeader = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+
+  h2 {
+    font-size: 1.25rem;
+    color: ${(props) => props.theme['base-title']};
+  }
+
+  span {
+    font-size: 0.875rem;
+    color: ${(props) => props.theme['base-span']};
+    min-width: 4rem;
+  }
+`
+
+export const PostContent = styled.div`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
 `

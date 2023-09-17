@@ -48,6 +48,11 @@ export const ProfileContentHeader = styled.div`
     font-size: 0.75rem;
     text-transform: uppercase;
     color: ${(props) => props.theme.blue};
+
+    &:hover {
+      border-bottom: 1px solid ${(props) => props.theme.blue};
+      border-top: 1px solid transparent;
+    }
   }
 `
 

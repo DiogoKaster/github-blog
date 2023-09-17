@@ -14,6 +14,10 @@ export const PostResumeContainer = styled(NavLink)`
 
   background: ${(props) => props.theme['base-post']};
   border-radius: 0.5rem;
+
+  &:hover {
+    outline: 2px solid ${(props) => props.theme['base-border']};
+  }
 `
 
 export const PostResumeHeader = styled.header`

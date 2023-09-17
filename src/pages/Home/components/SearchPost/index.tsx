@@ -33,6 +33,7 @@ export function SearchPost({ onSearch }: SearchPostProps) {
         <span>6 publicações</span>
       </SearchPostHeader>
       <input
+        autoComplete="off"
         onKeyDown={(e) => {
           if (e.key === 'Enter') {
             handleSubmit(handleSeachPosts)()

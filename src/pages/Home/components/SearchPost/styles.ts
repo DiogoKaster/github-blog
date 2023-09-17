@@ -22,6 +22,10 @@ export const SearchPostContainer = styled.form`
     &::placeholder {
       color: ${(props) => props.theme['base-label']};
     }
+
+    &:focus {
+      outline: 1px solid ${(props) => props.theme.blue};
+    }
   }
 `
 export const SearchPostHeader = styled.header`

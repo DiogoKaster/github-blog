@@ -1,18 +1,20 @@
 import { PostContent, PostResumeContainer, PostResumeHeader } from './styles'
 
-export function PostResume() {
+interface PostResumeProps {
+  title: string
+  createdAt: string
+  body: string
+}
+
+export function PostResume({ title, createdAt, body }: PostResumeProps) {
   return (
     <PostResumeContainer>
       <PostResumeHeader>
-        <h2>JavaScript data types and data structures</h2>
-        <span>Há 1 dia</span>
+        <h2>{title}</h2>
+        <span>{createdAt}</span>
       </PostResumeHeader>
       <PostContent>
-        <p>
-          Programming languages all have built-in data structures, but these
-          often differ from one language to another. This article attempts to
-          list the built-in data structures available in
-        </p>
+        <p>{body}</p>
       </PostContent>
     </PostResumeContainer>
   )
